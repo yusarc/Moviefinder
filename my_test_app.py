@@ -17,7 +17,7 @@ with dataset:
     st.header("Ratings Dataset")
     st.text("Uploading...")
     
-    ratings= Path(r"OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/ratings.csv")
+    ratings= Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/ratings.csv").parents[1]/"ml-latest-small/ratings.csv"
     ratings= pd.read_csv('./ml-latest-small/ratings.csv')
     st.write(ratings.head())
     
@@ -28,7 +28,7 @@ with dataset:
     st.header("Movies Dataset")
     st.text("Uploading...")
     
-    movies=Path(r"OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/movies.csv")
+    movies=Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/movies.csv").parents[1]/"ml-latest-small/movies.csv"
     movies= pd.read_csv('./ml-latest-small/movies.csv')
     st.write( movies.head())
     
