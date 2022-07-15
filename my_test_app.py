@@ -47,7 +47,7 @@ with model_training:
     
     sel_col, disp_col = st.columns(2)
     movie_id= sel_col.selectbox("Just give me movie's Id", options=[1,2,3,4,5,6,7,8,9,10],index=0)
-    n= sel_col.selectbox("How many movie do you want to list?", options=[1,2,3,4,5,6,7,8,9,10,'No limit'],index=0)
+    n= sel_col.selectbox("How many movie do you want to list?", options=[1,2,3,4,5,6,7,8,9,10],index=0)
     
 #     title = sel_col.selectbox("Just give me movie's Id", options=['Toy Story (1995)','Jumanji (1995)','Grumpier Old Men (1995)'],index=0)
 #     movieId = movies.loc[movies.title == title]['movieId']
