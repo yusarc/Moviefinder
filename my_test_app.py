@@ -19,7 +19,7 @@ with dataset:
     
     ratings= Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/ratings.csv").parents[1]/"ml-latest-small/ratings.csv"
     ratings= pd.read_csv('https://raw.githubusercontent.com/yusarc/moviefinder/master/ratings.csv')
-    st.write(ratings.head())
+    st.write(ratings.head(10))
     
     st.subheader("Distrubiton of Ratings")
     ratings_spread=pd.DataFrame(ratings['rating'].value_counts()).head(20)
@@ -30,7 +30,7 @@ with dataset:
     
     movies=Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/movies.csv").parents[1]/"ml-latest-small/movies.csv"
     movies= pd.read_csv('https://raw.githubusercontent.com/yusarc/moviefinder/master/movies.csv')
-    st.write( movies.head())
+    st.write( movies.head(10))
     
     st.subheader("Distrubiton of Genres")
     genres_spread=pd.DataFrame(movies['genres'].value_counts()).head(20)
