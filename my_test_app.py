@@ -18,7 +18,7 @@ with dataset:
     st.text("Uploading...")
     
     ratings= Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/ratings.csv").parents[1]/"ml-latest-small/ratings.csv"
-    ratings= pd.read_csv('./ml-latest-small/ratings.csv')
+    ratings= pd.read_csv('https://raw.githubusercontent.com/yusarc/moviefinder/master/ratings.csv')
     st.write(ratings.head())
     
     st.subheader("Distrubiton of Ratings")
@@ -29,7 +29,7 @@ with dataset:
     st.text("Uploading...")
     
     movies=Path("OneDrive/Desktop/WBS_Coding/8.Recommender System/ml-latest-small/movies.csv").parents[1]/"ml-latest-small/movies.csv"
-    movies= pd.read_csv('./ml-latest-small/movies.csv')
+    movies= pd.read_csv('https://raw.githubusercontent.com/yusarc/moviefinder/master/movies.csv')
     st.write( movies.head())
     
     st.subheader("Distrubiton of Genres")
