@@ -17,7 +17,7 @@ with dataset:
     st.header("Ratings Dataset")
     st.text("Uploading...")
     
-    ratings= pd.read_csv('ml-latest-small/ratings.csv')
+    ratings= pd.read_csv('./ml-latest-small/ratings.csv')
     st.write(ratings.head())
     
     st.subheader("Distrubiton of Ratings")
@@ -27,7 +27,7 @@ with dataset:
     st.header("Movies Dataset")
     st.text("Uploading...")
     
-    movies= pd.read_csv('ml-latest-small/movies.csv')
+    movies= pd.read_csv('./ml-latest-small/movies.csv')
     st.write( movies.head())
     
     st.subheader("Distrubiton of Genres")
